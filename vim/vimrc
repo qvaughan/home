@@ -1,0 +1,20 @@
+" Pathogen
+execute pathogen#infect()
+
+" NERDTree
+let NERDTreeShowHidden=1
+autocmd vimenter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline_theme='term'
+
+" Syntax highlighting and color scheme
+syntax enable
+colorscheme darcula
+
+" Search options
+set incsearch
+set hlsearch
