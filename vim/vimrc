@@ -18,3 +18,5 @@ colorscheme darcula
 " Search options
 set incsearch
 set hlsearch
+
+set nowrap
