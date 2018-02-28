@@ -3,6 +3,10 @@
 test -n "$KILL_EVERYTHING" && rm -rf ~/.vim ~/.vimrc ~/.bash_profile ~/.bash_includes
 
 test ! -d ~/.vim && mkdir ~/.vim
+test ! -d ~/.vim/.backup && mkdir ~/.vim/.backup
+test ! -d ~/.vim/.swp && mkdir ~/.vim/.swp
+test ! -d ~/.vim/.undo && mkdir ~/.vim/.undo
+
 cp -Rf $(dirname $BASH_SOURCE)/vim/autoload/ ~/.vim/autoload/
 cp -Rf $(dirname $BASH_SOURCE)/vim/bundle/ ~/.vim/bundle/
 cp -Rf $(dirname $BASH_SOURCE)/vim/colors/ ~/.vim/colors/
