@@ -7,7 +7,7 @@ export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
 
 # Prompt config
-export PS1='\[\033[36m\]\u:\w\[\033[93m\]$(__git_ps1 " (%s)") \[\033[36m\]$ \[\033[0m\]'
+export PS1='\[\033[36m\]\u@\h:\w\[\033[93m\]$(__git_ps1 " (%s)") \[\033[36m\]$ \[\033[0m\]'
 
 # Configure history to desired settings
 export HISTSIZE=100000                   # big big history
