@@ -16,6 +16,7 @@ cp -i $(dirname $BASH_SOURCE)/vim/vimrc ~/.vimrc
 test ! -d ~/.bash_includes && mkdir ~/.bash_includes
 cp -i $(dirname $BASH_SOURCE)/bash/bash_includes/* ~/.bash_includes
 cp -i $(dirname $BASH_SOURCE)/bash/bash_profile ~/.bash_profile
+cp -i $(dirname $BASH_SOURCE)/bash/bashrc ~/.bashrc
 
 echo 
 echo Done with installation, to activate the new .bash_profile in the current terminal, execute 'source ~/.bash_profile'
