@@ -26,3 +26,6 @@ set nowrap
 set undodir=~/.vim/.undo//
 set backupdir=~/.vim/.backup//
 set directory=~/.vim/.swp//
+
+:set tabstop=4 shiftwidth=4 expandtab
+
